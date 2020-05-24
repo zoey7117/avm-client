@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchAnimals } from '../actions/animalsAction';
+import Animals from '../components/Animals';
 
 class AnimalsContainer extends React.Component {
 	componentDidMount() {
@@ -10,7 +11,11 @@ class AnimalsContainer extends React.Component {
 	render() {
 		console.log(this.props);
 
-		return <div> </div>;
+		return (
+			<div>
+				<Animals animals={this.props.animals} />
+			</div>
+		);
 	}
 }
 
