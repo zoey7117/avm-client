@@ -1,0 +1,9 @@
+{
+  "short_name": "Animal Vegetable Mineral",
+  "name": "Animal Vegetable Mineral",
+
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
