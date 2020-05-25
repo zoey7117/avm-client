@@ -1,8 +1,17 @@
 import React from 'react';
-import 'Overlay.css';
+import './Overlay.css';
 
-const Overlay = () => {
-	return <div className="circle" />;
+const runAnimation = () => {
+	document.querySelector('.circle').classList.add('.activate');
+};
+
+const Overlay = ({ children, onClick }) => {
+	return (
+		<div className="parent">
+			<div className="circle" />
+			<div onClick={onClick}>{children}</div>
+		</div>
+	);
 };
 
 export default Overlay;
