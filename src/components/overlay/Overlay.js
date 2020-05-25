@@ -1,14 +1,12 @@
 import React from 'react';
 import './Overlay.css';
-
-const runAnimation = () => {
-	document.querySelector('.circle').classList.add('.activate');
-};
+import { Link } from 'react-router-dom';
 
 const Overlay = ({ children, onClick }) => {
 	return (
-		<div className="parent">
+		<div>
 			<div className="circle" />
+
 			<div onClick={onClick}>{children}</div>
 		</div>
 	);

@@ -8,7 +8,7 @@ import Animal from './Animal';
 class Animals extends React.Component {
 	render() {
 		console.log(this.props.animals);
-		return <div />;
+		return <div>hi</div>;
 	}
 }
 export default Animals;

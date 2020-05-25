@@ -1,5 +1,4 @@
-.circle,
-.content {
+.circle {
 	/* -webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 2s ease-in-out;
@@ -9,29 +8,33 @@
 
 .circle {
 	position: absolute;
+	/* animation: random 50s infinite; */
 
 	background-color: rgb(241, 196, 15);
-
 	border-radius: 100%;
-	color: none;
-	text-align: center;
-	transform: scale(0.01);
-
-	width: 100vw;
+	transform: scale(0);
+	/* margin: 0 auto; */
+	/* margin-left: 20%; */
+	/* top: 50%; */
+	left: 25%;
+	width: 100vh;
 	height: 100vh;
 	z-index: 10;
-	/* line-height: 400px; */
 }
+
+/* @keyframes random {
+	15% {
+		background-color: rgb(241, 196, 15);
+	}
+	30% {
+		background-color: #2ee671;
+	}
+	45% {
+		background-color: #3498db;
+	}
+} */
 
 .circle.activate {
-	transform: scale(1.5);
-
-	vertical-align: middle;
-}
-
-.content {
-	opacity: .1;
-}
-.circle:hover .content {
-	opacity: .02;
+	transform: scale(3);
+	/* vertical-align: middle; */
 }

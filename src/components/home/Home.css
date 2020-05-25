@@ -15,18 +15,9 @@
 	font-family: 'Modak', cursive;
 	font-weight: 100;
 	line-height: 12em;
-
 	align-items: center;
 	justify-content: center;
 }
-/* .overlay {
-	display: relative;
-	height: 100vh;
-	/* size: cover; */
-/* width: 100px; */
-/* background: rgba(0, 0, 0, .2);
-	z-index: 1;
-} */
 
 /* font-family: 'Fontdiner Swanky', cursive; */
 /* font-family: 'Leckerli One', cursive; */
