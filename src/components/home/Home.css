@@ -1,0 +1,109 @@
+.flex-home {
+	/* width: 60vw; */
+	height: 100vh;
+	display: flex;
+	border: 10px white solid;
+}
+.flex-child {
+	font-size: 80px;
+	text-align: center;
+	width: 33.33%;
+
+	/* letter-spacing: .05em; */
+	/* font-family: 'Fontdiner Swanky', cursive; */
+	/* font-family: 'Leckerli One', cursive; */
+	font-family: 'Modak', cursive;
+	font-weight: 100;
+	line-height: 12em;
+
+	align-items: center;
+	justify-content: center;
+}
+.overlay {
+	display: relative;
+	height: 100vh;
+	/* size: cover; */
+	/* width: 100px; */
+	background: rgba(0, 0, 0, .2);
+	z-index: 1;
+}
+
+/* font-family: 'Fontdiner Swanky', cursive; */
+/* font-family: 'Leckerli One', cursive; */
+/* font-family: 'Modak', cursive; */
+/* font-weight: 100; */
+/* font-family: 'Princess Sofia', cursive; */
+/* font-family: 'Shrikhand', cursive; */
+/* font-family: 'Sonsie One', cursive; */
+/* } */
+/* h3 {
+	/* justify-content: center; */
+/* }  */
+
+.animal {
+	background-color: #2ee671;
+	color: rgba(52, 152, 219, .8);
+	z-index: -1;
+}
+.vegetable {
+	background-color: rgb(241, 196, 15);
+	color: white;
+	z-index: -1;
+
+	/* text-shadow: grey 2px 2px 2px; */
+}
+.mineral {
+	background-color: #3498db;
+	color: yellowgreen;
+	z-index: -1;
+}
+body {
+	padding: 20px;
+}
+
+.circle,
+.content {
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 2s ease-in-out;
+	-ms-transition: all 2s ease-in-out;
+	transition: all 2s ease-in-out;
+}
+
+.circle {
+	background: rgba(99, 99, 99, 0.8);
+	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
+	border-radius: 100%;
+	color: white;
+	text-align: center;
+	font-family: sans-serif;
+	padding: 20px;
+	overflow: hidden;
+
+	-webkit-transform: scale(0.1);
+	-moz-transform: scale(0.1);
+	-o-transform: scale(0.1);
+	-ms-transform: scale(0.1);
+	transform: scale(0.1);
+
+	width: 400px;
+	height: 400px;
+	line-height: 400px;
+}
+
+.circle:hover {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+
+	vertical-align: middle;
+}
+
+.content {
+	opacity: .1;
+}
+.circle:hover .content {
+	opacity: 1;
+}

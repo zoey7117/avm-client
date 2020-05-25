@@ -1,4 +1,5 @@
 import React from 'react';
+import Animal from './Animal';
 
 // const Animals = () => {
 // 	return <div />;

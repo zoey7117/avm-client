@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchAnimals } from '../actions/animalsAction';
-import Animals from '../components/Animals';
+import Animals from '../components/animals/Animals';
 
 class AnimalsContainer extends React.Component {
 	componentDidMount() {
