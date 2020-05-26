@@ -13,6 +13,7 @@ class AnimalsContainer extends React.Component {
 
 		return (
 			<div>
+				hi
 				<Animals animals={this.props.animals} />
 			</div>
 		);

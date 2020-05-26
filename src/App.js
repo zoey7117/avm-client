@@ -8,12 +8,12 @@ import Overlay from './components/overlay/Overlay';
 function App() {
 	return (
 		<div className="App">
+			<Route exact path="/animal" component={AnimalsContainer} />
+
 			<Switch>
-				<Route exact path="/animal" component={AnimalsContainer} />
+				<Route exact path="/animal" render={null} />
 				<Route component={Home} />
 			</Switch>
-			{/* <Route path="/" component={Home} />
-			<Route path="/animal" component={AnimalsContainer} /> */}
 		</div>
 	);
 }

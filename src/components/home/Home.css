@@ -1,22 +1,45 @@
 .flex-home {
-	/* width: 60vw; */
-	height: 100vh;
+	/* height: 69vh; */
+	/* flex-direction: column; */
+	padding: 1vh;
+	width: 90vw;
+	/* justify-content: center; */
+	margin: auto;
+}
+
+.flex-instructions {
+	/* border: 10px rgb(241, 196, 15) solid; */
 	display: flex;
-	border: 10px white solid;
+	flex: 1;
+	padding: 1rem;
+	padding: 0 4rem;
+	width: 88.5vw;
+	margin: 0 auto;
+	margin-top: 5vh;
+	border-left: 10px #2ee671 solid;
+	border-right: 10px #3498db solid;
+}
+
+p {
+	font-size: 20px;
+}
+span {
+	font-size: 30px;
+	font-family: 'Modak', cursive;
+	font-weight: 100;
+	letter-spacing: .02em;
+	color: rgb(241, 196, 15);
 }
 .flex-child {
 	font-size: 80px;
 	text-align: center;
 	width: 33.33%;
-
-	/* letter-spacing: .05em; */
-	/* font-family: 'Fontdiner Swanky', cursive; */
-	/* font-family: 'Leckerli One', cursive; */
+	display: inline-block;
 	font-family: 'Modak', cursive;
 	font-weight: 100;
-	line-height: 12em;
-	align-items: center;
-	justify-content: center;
+	height: 70vh;
+	margin-top: 5vh;
+	padding-top: 30vh;
 }
 
 /* font-family: 'Fontdiner Swanky', cursive; */
@@ -40,6 +63,7 @@
 	background-color: rgb(241, 196, 15);
 	color: white;
 	z-index: -1;
+	/* justify-content: center; */
 
 	/* text-shadow: grey 2px 2px 2px; */
 }
@@ -47,7 +71,4 @@
 	background-color: #3498db;
 	color: yellowgreen;
 	z-index: -1;
-}
-body {
-	padding: 20px;
 }

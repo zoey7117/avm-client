@@ -5,11 +5,14 @@
 .App {
 	text-align: center;
 }
+body {
+	height: 100vh;
+}
 
 /* @import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Galada&family=Leckerli+One&family=Modak&family=Oleo+Script:wght@400;700&family=Princess+Sofia&family=Sail&family=Shrikhand&family=Sonsie+One&display=swap'); */
 
 /* font-family: 'Fontdiner Swanky', cursive;
-font-family: 'Galada', cursive;
+
 font-family: 'Leckerli One', cursive;
 font-family: 'Modak', cursive;
 font-family: 'Oleo Script', cursive;

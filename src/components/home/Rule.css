@@ -1,0 +1,22 @@
+.rule {
+	height: 10vh;
+	display: flex;
+
+	margin-bottom: 10vh;
+	width: 88.5vw;
+	margin: 1rem auto;
+}
+.rule-child {
+	display: inline-block;
+	width: 33.33%;
+	height: 10px;
+}
+.animal {
+	background-color: #2ee671;
+}
+.vegetable {
+	background-color: rgb(241, 196, 15);
+}
+.mineral {
+	background-color: #3498db;
+}
