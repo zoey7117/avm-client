@@ -15,9 +15,10 @@ const Home = () => {
 			{/* <Rule /> */}
 			<div className="flex-instructions">
 				<p>
-					<span>This is a guessing game.</span> <br />Once you hit start, you'll land on the pertinant page
-					and can choose up to 10 clues, whose answer can only be true or false. Once you think you know the
-					answer you have three chances to guess correctly.<br />
+					<span>This is a guessing game.</span> <br />The answer is either an animal, vegetable or mineral.
+					Once you hit start, you'll land on the pertinant page and can choose up to 10 clues, whose answer
+					can only be true or false. Once you think you know the answer you have three chances to guess
+					correctly.<br />
 					<br />
 					<Link to="/animal">
 						<span>start</span>

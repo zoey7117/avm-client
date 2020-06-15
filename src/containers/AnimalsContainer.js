@@ -9,7 +9,7 @@ class AnimalsContainer extends React.Component {
 	}
 
 	render() {
-		console.log(this.props.animals);
+		// console.log(this.props.animals);
 
 		return (
 			<div>

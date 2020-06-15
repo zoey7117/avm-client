@@ -6,10 +6,11 @@ class Animals extends React.Component {
 		return animals.map((animal) => <Animal key={animal.id} animal={animal} />);
 	}
 	render() {
-		let animals = this.props.animals;
-		console.log(this.props.animals);
+		let animals = this.props.animals.animals;
+		console.log(this.props.animals, animals, this.props.animals.animals);
+		console.log(this.renderAnimals(animals));
 
-		return <div>{this.renderAnimals(this.props.animals)}</div>;
+		return <div>{this.renderAnimals(animals)}</div>;
 	}
 }
 export default Animals;
