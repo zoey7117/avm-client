@@ -18,6 +18,15 @@ font-family: 'Lato', sans-serif; */
 	margin-top: 5vh;
 	padding: 30px 10px;
 }
+.animal-header {
+	width: 100%;
+	font-size: 80px;
+	text-align: center;
+	font-family: 'Modak', cursive;
+	font-weight: 100;
+	padding-top: 10px;
+	color: rgb(241, 196, 15);
+}
 .breadbox-question {
 	color: #000;
 	font-weight: bolder;

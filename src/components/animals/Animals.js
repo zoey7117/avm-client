@@ -3,6 +3,7 @@ import React from 'react';
 import './Animal.css';
 
 class Animals extends React.Component {
+	state = {};
 	render() {
 		let animals = this.props.animals.animals;
 		let randomAnimal = animals[Math.floor(Math.random() * animals.length)];
@@ -13,6 +14,9 @@ class Animals extends React.Component {
 		return (
 			<div>
 				<div>
+					<div className="flex-instructions">
+						<h4 className="animal-header">Animal</h4>
+					</div>
 					<div className="animal-container">
 						<div className="animal-child yes">
 							True
@@ -41,7 +45,6 @@ class Animals extends React.Component {
 								</h1>
 							</div>
 						</div>
-
 						<div className="animal-child questions">
 							<h1>
 								<div className="breadbox-question">
@@ -104,3 +107,36 @@ class Animals extends React.Component {
 	}
 }
 export default Animals;
+// class LoginControl extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.handleLoginClick = this.handleLoginClick.bind(this);
+//     this.handleLogoutClick = this.handleLogoutClick.bind(this);
+//     this.state = {isLoggedIn: false};
+//   }
+
+//   handleLoginClick() {
+//     this.setState({isLoggedIn: true});
+//   }
+
+//   handleLogoutClick() {
+//     this.setState({isLoggedIn: false});
+//   }
+
+//   render() {
+//     const isLoggedIn = this.state.isLoggedIn;
+//     let button;
+//     if (isLoggedIn) {
+//       button = <LogoutButton onClick={this.handleLogoutClick} />;
+//     } else {
+//       button = <LoginButton onClick={this.handleLoginClick} />;
+//     }
+
+//     return (
+//       <div>
+//         <Greeting isLoggedIn={isLoggedIn} />
+//         {button}
+//       </div>
+//     );
+//   }
+// }
