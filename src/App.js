@@ -4,6 +4,7 @@ import './App.css';
 import AnimalsContainer from './containers/AnimalsContainer';
 import Home from './components/home/Home';
 import Overlay from './components/overlay/Overlay';
+import Question from './components/question/Question';
 
 function App() {
 	return (

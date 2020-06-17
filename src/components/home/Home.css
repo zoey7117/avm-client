@@ -1,14 +1,11 @@
 .flex-home {
-	/* height: 69vh; */
-	/* flex-direction: column; */
+	display: flex;
 	padding: 1vh;
 	width: 90vw;
-	/* justify-content: center; */
 	margin: auto;
 }
 
 .flex-instructions {
-	/* border: 10px rgb(241, 196, 15) solid; */
 	display: flex;
 	flex: 1;
 	padding: 1rem;
@@ -18,6 +15,7 @@
 	margin-top: 5vh;
 	border-left: 10px #2ee671 solid;
 	border-right: 10px #3498db solid;
+	height: 12vh;
 }
 
 p {
@@ -32,14 +30,18 @@ span {
 }
 .flex-child {
 	font-size: 80px;
-	text-align: center;
-	width: 33.33%;
-	display: inline-block;
+	display: flex;
+	flex: 1;
 	font-family: 'Modak', cursive;
 	font-weight: 100;
 	height: 70vh;
 	margin-top: 5vh;
 	padding-top: 30vh;
+}
+.vegetable,
+.mineral,
+.animal {
+	justify-content: center;
 }
 
 /* font-family: 'Fontdiner Swanky', cursive; */
