@@ -7,7 +7,7 @@ let no = document.querySelectorAll('.flex-animal.no');
 class Animals extends React.Component {
 
 	isClicked() {
-		// if (this.props) {
+		// if (true) {
 		// 	yes.classList.add('show-yes');
 		// } else {
 		// 	no.classList.add('show-no');
@@ -15,7 +15,6 @@ class Animals extends React.Component {
 	}
 
 	render() {
-		// const { animals } = this.props.animals.animals;
 		let animals = this.props.animals.animals;
 		let randomAnimal = animals[Math.floor(Math.random() * animals.length)];
 		console.log('random animal', randomAnimal);
@@ -28,7 +27,7 @@ class Animals extends React.Component {
 					<div className="flex-instructions animal-hed">
 					<p><span>Animal</span>
 						<br />
-						Is it bigger than a breadbox? </p><br /><br /><br />
+						Is it bigger than a breadbox? </p>
 {/* <strong>{String(randomAnimal.breadbox)}</strong> */}
 
 					</div>
@@ -64,13 +63,13 @@ class Animals extends React.Component {
 								{/* <hr /> */}
 								<ul>
 									<h3>{String(randomAnimal.breadbox)}</h3>
-									<li className="alive" onClick={this.isClicked(this.props[4])}>Is it alive?</li>
-									<li className="extinct" onClick={() => console.log("clicked!")}>Is it extinct?</li>
-									<li className="mammal" onClick={() => this.isClicked(this.props[4])}>Is it a mammal?</li>
-									<li className="amphibian">Is it an amphibian?</li>
-									<li className="arms">Does it have arms?</li>
-									<li className="legs">Does it have legs?</li>
-									<li className="fly">Does it fly?</li>
+									<li className="alive" >Is it alive?</li>
+									<li className="extinct" onClick={() => console.log("extinct clicked!")}>Is it extinct?</li>
+									<li className="mammal" >Is it a mammal?</li>
+									<li className="amphibian" onClick={() => console.log("amphibian clicked!", this.props)}>Is it an amphibian?</li>
+									<li className="arms" onClick={() => console.log("arms clicked!", randomAnimal.arms)} >Does it have arms?</li>
+									<li className="legs" onClick={() => this.isClicked(randomAnimal.legs)}>Does it have legs?</li>
+									{/* <li className="fly" onClick={randomAnimal.fly ? yes.classList.add('show-yes') : no.classList.add('show-no')}>Does it fly?</li> */}
 									<li className="livesInWater">Does it live in water?</li>
 									<li className="fur">Does it have fur?</li>
 									<li className="famous">Is it famous?</li>

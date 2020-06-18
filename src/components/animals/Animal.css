@@ -53,6 +53,9 @@ strong {
 .show-yes {
 	visibility: visible;
 }
+.show-no {
+	visibility: visible;
+}
 
 li {
 	list-style-type: none;
