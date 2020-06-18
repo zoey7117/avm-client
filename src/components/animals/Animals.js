@@ -7,11 +7,11 @@ let no = document.querySelectorAll('.flex-animal.no');
 class Animals extends React.Component {
 
 	isClicked() {
-		if (this.state) {
-			yes.classList.add('show-yes');
-		} else {
-			no.classList.add('show-no');
-		}
+		// if (this.props) {
+		// 	yes.classList.add('show-yes');
+		// } else {
+		// 	no.classList.add('show-no');
+		// }
 	}
 
 	render() {
@@ -27,16 +27,16 @@ class Animals extends React.Component {
 				<div>
 					<div className="flex-instructions animal-hed">
 					<p><span>Animal</span>
-
 						<br />
-						Is it bigger than a breadbox? </p><br />
+						Is it bigger than a breadbox? </p><br /><br /><br />
+{/* <strong>{String(randomAnimal.breadbox)}</strong> */}
 
 					</div>
 					<div className="animal-container">
 						<div className="flex-animal yes">
 							<h1>
 								<ul>
-									<span>True</span>
+									<span>yes</span>
 									<li className="alive">Is it alive?</li>
 									<li className="extinct">Is it extinct?</li>
 									<li className="mammal">Is it a mammal?</li>
@@ -64,9 +64,9 @@ class Animals extends React.Component {
 								{/* <hr /> */}
 								<ul>
 									<h3>{String(randomAnimal.breadbox)}</h3>
-									<li className="alive">Is it alive?</li>
-									<li className="extinct">Is it extinct?</li>
-									<li className="mammal">Is it a mammal?</li>
+									<li className="alive" onClick={this.isClicked(this.props[4])}>Is it alive?</li>
+									<li className="extinct" onClick={() => console.log("clicked!")}>Is it extinct?</li>
+									<li className="mammal" onClick={() => this.isClicked(this.props[4])}>Is it a mammal?</li>
 									<li className="amphibian">Is it an amphibian?</li>
 									<li className="arms">Does it have arms?</li>
 									<li className="legs">Does it have legs?</li>
@@ -89,7 +89,7 @@ class Animals extends React.Component {
 						<div className="flex-animal no">
 							<h1>
 								<ul>
-						<span>False</span>
+						<span>no</span>
 								<li className="alive">Is it alive?</li>
 								<li className="extinct">Is it extinct?</li>
 								<li className="mammal">Is it a mammal?</li>
