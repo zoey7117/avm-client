@@ -9,13 +9,14 @@
 	display: flex;
 	flex: 1;
 	padding: 1rem;
-	padding: 0 4rem;
+	padding: 0 1rem;
 	width: 88.5vw;
 	margin: 0 auto;
 	margin-top: 5vh;
 	border-left: 10px #2ee671 solid;
 	border-right: 10px #3498db solid;
 	height: 12vh;
+	justify-content: center;
 }
 
 p {

@@ -6,10 +6,12 @@ import Home from './components/home/Home';
 import Overlay from './components/overlay/Overlay';
 import Question from './components/question/Question';
 
+
 function App() {
 	return (
 		<div className="App">
 			<Route exact path="/animal" component={AnimalsContainer} />
+
 
 			<Switch>
 				<Route exact path="/animal" render={null} />

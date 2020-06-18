@@ -1,44 +1,43 @@
 import React from 'react';
 // import Animal from '../stash/Animal';
 import './Animal.css';
-let yes = document.querySelector('.animal-child.yes');
-let no = document.querySelector('.animal-child.no');
+let yes = document.querySelectorAll('.flex-animal.yes');
+let no = document.querySelectorAll('.flex-animal.no');
 
 class Animals extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			alive: true,
-			extinct: false
-		};
+
+	isClicked() {
+		if (this.state) {
+			yes.classList.add('show-yes');
+		} else {
+			no.classList.add('show-no');
+		}
 	}
-	// isClicked() {
-	// 	if (this.state) {
-	// 		yes.classList.add('show');
-	// 	} else {
-	// 		no.classList.add('show');
-	// 	}
-	// }
 
 	render() {
+		// const { animals } = this.props.animals.animals;
 		let animals = this.props.animals.animals;
 		let randomAnimal = animals[Math.floor(Math.random() * animals.length)];
 		console.log('random animal', randomAnimal);
-		console.log(this.state.alive);
 
 		if (!randomAnimal) return null;
 
 		return (
 			<div>
 				<div>
-					<div className="flex-instructions">
-						<h4 className="animal-header">Animal</h4>
+					<div className="flex-instructions animal-hed">
+					<p><span>Animal</span>
+
+						<br />
+						Is it bigger than a breadbox? </p><br />
+
 					</div>
 					<div className="animal-container">
 						<div className="flex-animal yes">
-							True
 							<h1>
 								<ul>
+									<span>True</span>
+									<li className="alive">Is it alive?</li>
 									<li className="extinct">Is it extinct?</li>
 									<li className="mammal">Is it a mammal?</li>
 									<li className="amphibian">Is it an amphibian?</li>
@@ -60,10 +59,11 @@ class Animals extends React.Component {
 							</h1>
 						</div>
 						<div className="flex-animal question">
+						<span></span>
 							<h1>
-								Is it bigger than a breadbox?
 								{/* <hr /> */}
 								<ul>
+									<h3>{String(randomAnimal.breadbox)}</h3>
 									<li className="alive">Is it alive?</li>
 									<li className="extinct">Is it extinct?</li>
 									<li className="mammal">Is it a mammal?</li>
@@ -87,8 +87,9 @@ class Animals extends React.Component {
 							{console.log(randomAnimal)}
 						</div>
 						<div className="flex-animal no">
-							Not True
 							<h1>
+								<ul>
+						<span>False</span>
 								<li className="alive">Is it alive?</li>
 								<li className="extinct">Is it extinct?</li>
 								<li className="mammal">Is it a mammal?</li>
@@ -106,7 +107,8 @@ class Animals extends React.Component {
 								<li className="politician">Is it a politician?</li>
 								<li className="singer">Is it a singer?</li>
 								<li className="awardWinner">Is it an award winner?</li>
-								<li className="ageAbove40">Is it more than 40 years old?</li>
+									<li className="ageAbove40">Is it more than 40 years old?</li>
+									</ul>
 							</h1>
 						</div>
 					</div>
