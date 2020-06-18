@@ -50,10 +50,21 @@ strong {
 	justify-content: center;
 }
 
-.show-yes {
+.show-yes.flex-animal.yes li {
+
+		visibility: visible;
+
+
+}
+.show-yes li{
+
 	visibility: visible;
 }
-.show-no {
+.show-no li{
+
+	visibility: visible;
+}
+.show-no.flex-animal.no li  {
 	visibility: visible;
 }
 
