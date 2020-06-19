@@ -5,7 +5,6 @@
 	padding: 1vh;
 	width: 90vw;
 	margin: auto;
-
 }
 /* font-family: 'Cabin', sans-serif;
 font-family: 'Lato', sans-serif; */
@@ -38,7 +37,6 @@ h1 {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 	line-height: 1.45;
-
 }
 strong {
 	font-family: 'Poppins', sans-serif;
@@ -50,30 +48,33 @@ strong {
 	justify-content: center;
 }
 
-.show-yes.flex-animal.yes li {
-
-		visibility: visible;
-
-
-}
-.show-yes li{
-
-	visibility: visible;
-}
-.show-no li{
-
-	visibility: visible;
-}
-.show-no.flex-animal.no li  {
+/* .show-yes.flex-animal.yes li {
 	visibility: visible;
 }
 
-li {
+.show-yesQ.flex-animal.question li {
+	visibility: hidden;
+}
+/* .show-yes li {
+	visibility: visible;
+}
+.show-no li {
+	visibility: visible;
+} */
+/* .show-no.flex-animal.no li {
+	visibility: visible;
+} */
+/* .show-noQ.flex-animal.question li {
+	visibility: hidden;
+} */
+*/ li {
 	list-style-type: none;
 	font-size: 24px;
-	padding: 0em 2.5em ;
+	padding: 0em 2.5em;
 }
-.flex-animal.question li:nth-child(even) { background: rgb(240, 215, 114); }
+.flex-animal.question li:nth-child(even) {
+	background: rgb(240, 215, 114);
+}
 ul {
 	margin: 0;
 	padding: 0 5px;
@@ -84,18 +85,23 @@ ul {
 	font-size: 20px;
 	line-height: 1.75;
 }
-.flex-animal.yes li:nth-child(even) { background:  #60ee94; }
+.flex-animal.yes li:nth-child(even) {
+	background: #60ee94;
+}
 ul {
 	margin: 0;
 	padding: 0 5px;
 	list-style-position: inside;
 }
-.flex-animal.yes li, .flex-animal.no li{
+.flex-animal.yes li,
+.flex-animal.no li {
 	color: black;
 	font-size: 20px;
 	line-height: 1.75;
 }
-.flex-animal.no li:nth-child(even) { background:  #5ba9dd; }
+.flex-animal.no li:nth-child(even) {
+	background: #5ba9dd;
+}
 ul {
 	margin: 0;
 	padding: 0 5px;
@@ -117,7 +123,9 @@ ul {
 	z-index: -1;
 }
 
-.flex-animal.yes span, .flex-animal.no span, h3{
+.flex-animal.yes span,
+.flex-animal.no span,
+h3 {
 	color: #000;
 	font-size: 40px;
 	line-height: .9;
@@ -132,17 +140,18 @@ h3 {
 }
 
 .flex-animal.question {
-	padding-top: 0
+	padding-top: 0;
 }
 .flex-instructions.animal-hed span {
 	padding-top: 50px;
 	font-size: 80px;
 }
-.flex-instructions.animal-hed   p {
+.flex-instructions.animal-hed p {
 	font-size: 24px;
 	text-align: center;
 	padding-top: 30px;
 }
-.flex-animal.no li, .flex-animal.yes li {
-	visibility: hidden;
+.flex-animal.no li,
+.flex-animal.yes li {
+	/* visibility: hidden; */
 }
