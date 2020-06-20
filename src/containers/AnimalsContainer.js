@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchAnimals } from '../actions/animalsAction';
 import Animals from '../components/animals/Animals';
+import RandomAnimal from '../components/animals/RandomAnimal';
 
 class AnimalsContainer extends React.Component {
 	componentDidMount() {
@@ -13,7 +14,8 @@ class AnimalsContainer extends React.Component {
 
 		return (
 			<div>
-				<Animals animals={this.props.animals} />
+				{/* <Animals animals={this.props.animals} /> */}
+				<RandomAnimal animals={this.props.animals} />
 			</div>
 		);
 	}

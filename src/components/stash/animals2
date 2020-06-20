@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Animal.css';
 
 let questions = {
@@ -46,9 +46,10 @@ class Animals extends React.Component {
 		}
 	}
 
-	generateQuestions = (animal) => {
-		return Object.keys(animal).map((key) => {
-			return <li onClick={() => this.handleClick(animal, key, questions[key])}>{questions[key]}</li>;
+	generateQuestions = (randomAnimal) => {
+		// const newAnimal = Object.assign({}, randomAnimal);
+		return Object.keys(randomAnimal).map((key) => {
+			return <li onClick={() => this.handleClick(randomAnimal, key, questions[key])}>{questions[key]}</li>;
 		});
 	};
 
@@ -67,12 +68,11 @@ class Animals extends React.Component {
 	// <li className="actor" onClick={randomAnimal.actor === true ? this.addListYes : this.addListNo}>Is it an actor?</li>
 
 	render() {
-		let animal = this.props.animal;
-		// let randomAnimal = animals[Math.floor(Math.random() * animals.length)];
-		console.log('random animal', this.props.animal);
-		// const newOne = randomAnimal;
+		let animals = this.props.animals.animals;
+		let randomAnimal = animals[Math.floor(Math.random() * animals.length)];
+		console.log('random animal', randomAnimal);
 
-		// if (!randomAnimal) return null;
+		if (!randomAnimal) return null;
 		return (
 			<div>
 				<div className="flex-instructions animal-hed">
@@ -98,8 +98,8 @@ class Animals extends React.Component {
 					<div className="flex-animal question">
 						<h1>
 							<ul>
-								{/* <h3>{String(randomAnimal.breadbox)}</h3> */}
-								{this.generateQuestions(animal)}
+								<h3>{String(randomAnimal.breadbox)}</h3>
+								{this.generateQuestions(randomAnimal)}
 							</ul>
 						</h1>
 					</div>

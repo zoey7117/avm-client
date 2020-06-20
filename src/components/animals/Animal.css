@@ -48,26 +48,7 @@ strong {
 	justify-content: center;
 }
 
-/* .show-yes.flex-animal.yes li {
-	visibility: visible;
-}
-
-.show-yesQ.flex-animal.question li {
-	visibility: hidden;
-}
-/* .show-yes li {
-	visibility: visible;
-}
-.show-no li {
-	visibility: visible;
-} */
-/* .show-no.flex-animal.no li {
-	visibility: visible;
-} */
-/* .show-noQ.flex-animal.question li {
-	visibility: hidden;
-} */
-*/ li {
+li {
 	list-style-type: none;
 	font-size: 24px;
 	padding: 0em 2.5em;
