@@ -28,8 +28,7 @@ class Animals extends React.Component {
 		super(props);
 		this.state = {
 			yes: [],
-			no: [],
-			color: ''
+			no: []
 		};
 		// This binding is necessary to make `this` work in the callback
 		this.handleClick = this.handleClick.bind(this);
@@ -54,17 +53,10 @@ class Animals extends React.Component {
 	}
 
 	generateQuestions = (animal) => {
-		// console.log(questions);
-
+		console.log(questions);
 		return Object.keys(animal).map((key) => {
 			return (
-				<li
-					className={key}
-					onClick={() => this.handleClick(animal, key, questions[key])}
-					// style={{ color: this.state.color }}
-					// onClick={this.boxClick}
-					// onClick={this.findQuestion}
-				>
+				<li className={key} onClick={() => this.handleClick(animal, key, questions[key])}>
 					{questions[key]}
 				</li>
 			);
@@ -83,30 +75,51 @@ class Animals extends React.Component {
 		});
 	};
 
-	boxClick = (e) => {
-		let questionClass = e.target.innerText;
-		console.log(questionClass);
-		if (Object.values(questions).includes(questionClass)) {
-			console.log(Object.values(questions).includes(questionClass));
+	getClassNames(wow) {
+		var keys = Object.keys(questions);
+		for (var j = 0; j < keys.length; j++) {
+			var key = keys[j];
+			for (let i = 0; i < wow.length; i++) {
+				console.log(wow[i].innerHTML, questions[key]);
+
+				if (wow[i].innerHTML === questions[key]) {
+					var answer = wow[i];
+					// 				// console.log(typeof wow[i].innerHTML, typeof questions[key]);
+
+					// {
+					// 	{
+					answer.style.color = 'red';
+					// 	}
+					// }
+				}
+			}
 		}
-	};
-	findQuestion = (container) => {
-		for (var i = 0; i < container.length; i++) {
-			console.log(container[i].textContent || container[i].innerText);
-		}
-	};
+	}
+	// }
+	// getClassNames() {
+	// 	var keys = Object.keys(questions);
+	// 	for (var j = 0; j < keys.length; j++) {
+	// 		var key = keys[j];
+	// 		console.log(questions[key]);
+	// 		const answer = questions[key];
+	// {
+	// 	{
+	// 		answer.style.color = 'red';
+	// 	}
+	// }
+	// console.log(typeof wow[i].innerHTML, typeof questions[key]);
+	// return <li onClick={wow[i].classList.add('hide')} />;
+	//
+	// 	}
+	// }
 
 	render() {
-		// this.findQuestion();
 		let animal = this.props.animal;
 		console.log('random animal', this.props.animal);
-		const container = document.getElementsByClassName('flex-animal question');
-		const containers = document.querySelector('flex-animal question');
-		// const containerArr = [ ...container ];
-		let wow = document.getElementsByTagName('li');
-		let wower = [ ...wow ];
-		// const wow = document.querySelectorAll('li');
-		console.log(wow, container, 'hi', wower);
+		// const container = document.querySelector('.flex-animal.question');
+		// let wow = container.getElementsByTagName('li');
+		const wow = document.querySelectorAll('li');
+		console.log(wow);
 
 		return (
 			<div>
@@ -134,9 +147,7 @@ class Animals extends React.Component {
 							<ul>
 								{/* <h3>{String(randomAnimal.breadbox)}</h3> */}
 								{this.generateQuestions(animal)}
-								{this.findQuestion(container)}
-								{/* {this.getClassNames(wow)} */}
-								{/* <div style={{ color: this.state.color }} onClick={this.boxClick} /> */}
+								{this.getClassNames(wow)}
 							</ul>
 						</h1>
 					</div>

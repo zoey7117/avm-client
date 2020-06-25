@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Animal.css';
 import Animals from './Animals.js';
 

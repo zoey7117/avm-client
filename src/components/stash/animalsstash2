@@ -61,9 +61,8 @@ class Animals extends React.Component {
 				<li
 					className={key}
 					onClick={() => this.handleClick(animal, key, questions[key])}
-					// style={{ color: this.state.color }}
-					// onClick={this.boxClick}
-					// onClick={this.findQuestion}
+					style={{ color: this.state.color }}
+					onClick={this.boxClick}
 				>
 					{questions[key]}
 				</li>
@@ -87,26 +86,22 @@ class Animals extends React.Component {
 		let questionClass = e.target.innerText;
 		console.log(questionClass);
 		if (Object.values(questions).includes(questionClass)) {
-			console.log(Object.values(questions).includes(questionClass));
+			console.log(Object.values(questions).finds(questionClass));
 		}
-	};
-	findQuestion = (container) => {
-		for (var i = 0; i < container.length; i++) {
-			console.log(container[i].textContent || container[i].innerText);
-		}
+		// if ((questionClass = question)) {
+		// 	questionClass.style.color = 'transparent';
+		// }
+		// questionClass.style.color = 'transparent';
+		// }
 	};
 
 	render() {
-		// this.findQuestion();
 		let animal = this.props.animal;
 		console.log('random animal', this.props.animal);
-		const container = document.getElementsByClassName('flex-animal question');
-		const containers = document.querySelector('flex-animal question');
-		// const containerArr = [ ...container ];
-		let wow = document.getElementsByTagName('li');
-		let wower = [ ...wow ];
-		// const wow = document.querySelectorAll('li');
-		console.log(wow, container, 'hi', wower);
+		// const container = document.querySelector('.flex-animal.question');
+		// let wow = container.getElementsByTagName('li');
+		const wow = document.querySelectorAll('li');
+		// console.log(wow);
 
 		return (
 			<div>
@@ -134,7 +129,6 @@ class Animals extends React.Component {
 							<ul>
 								{/* <h3>{String(randomAnimal.breadbox)}</h3> */}
 								{this.generateQuestions(animal)}
-								{this.findQuestion(container)}
 								{/* {this.getClassNames(wow)} */}
 								{/* <div style={{ color: this.state.color }} onClick={this.boxClick} /> */}
 							</ul>

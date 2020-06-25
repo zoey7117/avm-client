@@ -19,6 +19,10 @@ font-family: 'Lato', sans-serif; */
 	padding-top: 10px;
 	color: rgb(241, 196, 15);
 }
+.hide.flex-animal.question li {
+	color: red;
+	/* visibility: hidden; */
+}
 .flex-animal {
 	padding-top: 2vh;
 	margin-top: 5vh;
