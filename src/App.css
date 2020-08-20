@@ -9,7 +9,6 @@ body {
 	height: 100vh;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
-
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Galada&family=Leckerli+One&family=Modak&family=Oleo+Script:wght@400;700&family=Princess+Sofia&family=Sail&family=Shrikhand&family=Sonsie+One&display=swap'); */
@@ -23,3 +22,6 @@ font-family: 'Princess Sofia', cursive;
 font-family: 'Sail', cursive;
 font-family: 'Shrikhand', cursive;
 font-family: 'Sonsie One', cursive; */
+.colors {
+	color: 'transparent';
+}
